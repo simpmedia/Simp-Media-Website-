@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simp Media – AI-Powered Growth Engine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+  src="https://assets.calendly.com/assets/external/widget.js"
+  async
+></script>
+
+  <style>
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes floatSoft {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+    }
+
+    @keyframes rotateLoop {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes blinkCursor {
+      0%, 50% { border-color: #a78bfa; }
+      50.01%, 100% { border-color: transparent; }
+    }
+
+    @keyframes simp-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes simp-pulse {
+      0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 20px rgba(139, 92, 246, 0.75);
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.06);
+        box-shadow: 0 0 30px rgba(167, 139, 250, 1);
+      }
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes scanline {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(100%); }
+    }
+
+    @keyframes ping-slow {
+      75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+
+    .animate-gradient {
+      background-size: 200% 200%;
+      animation: gradientMove 18s ease infinite;
+    }
+
+    .animate-float {
+      animation: floatSoft 10s ease-in-out infinite;
+    }
+
+    .animate-pulse-glow {
+      animation: pulseGlow 2s infinite;
+    }
+
+    .animate-spin-slow {
+      animation: simp-spin 26s linear infinite;
+    }
+
+    .animate-spin-medium {
+      animation: simp-spin 15s linear infinite;
+    }
+
+    .animate-spin-fast {
+      animation: simp-spin 10s linear infinite;
+    }
+
+    .animate-core-pulse {
+      animation: simp-pulse 3.5s ease-in-out infinite;
+    }
+
+    .animate-scan {
+      animation: scanline 8s linear infinite;
+    }
+
+    .animate-ping-slow {
+      animation: ping-slow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .typewriter-cursor {
+      border-right: 2px solid #a78bfa;
+      animation: blinkCursor 0.8s steps(1) infinite;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      background: #050212; /* Deep violet-tinted black background matching the logo theme */
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
