@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
         <polyline points="22,6 12,13 2,6"/>
       </svg>
     </div>
-    <div className="text-slate-500 text-xs">simpmedia@gmail.com
+    <div className="text-slate-500 text-xs">info.simpmedia@gmail.com
 </div>
   </div>
 
